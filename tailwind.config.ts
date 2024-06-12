@@ -37,6 +37,8 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "var(--background)",
         foreground: "hsl(var(--foreground))",
+        button: "var(--button)",
+        link: "var(--links)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -65,6 +67,16 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontSize: {
+        h1: "120px",
+        h2: "80px",
+        h3: "64px",
+        h4: "40px",
+        h5: "34px",
+        h6: "24px",
+        base: "20px",
+        body: "16px",
       },
       borderRadius: {
         lg: "var(--radius)",

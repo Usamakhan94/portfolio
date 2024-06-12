@@ -6,6 +6,8 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --button: #0b0d10;
+    --links: #566a76;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -73,4 +75,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.btn-gradeint {
+  background: linear-gradient(
+    95deg,
+    rgba(19, 22, 27, 1) 0%,
+    rgba(1, 186, 237, 1) 35%,
+    rgba(0, 147, 249, 1) 77%,
+    rgba(19, 22, 27, 1) 100%
+  );
 }
