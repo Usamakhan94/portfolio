@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowCircleIcons } from "../ui/icons";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { href: "", label: "Home" },
@@ -16,18 +17,24 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="container relative">
-        <div className="flex justify-between items-center absolute w-full top-6 left-0">
+        <div className="flex justify-between items-center absolute px-4 w-full top-6 left-0">
           <Image src="/logo.svg" alt="Logo" width="210" height="60" />
           <div className="flex gap-9">
             <ul className="flex gap-9 items-center">
               {navLinks.map((navItem) => (
                 <li key={navItem.label}>
                   <Link
-                    className={`${
+                    className={`relative ${
                       pathName === navItem.href ? "text-white" : "text-link"
                     }`}
                     href={`/${navItem.href}`}
                   >
+                    {pathName === navItem.href ? (
+                      <motion.div
+                        layoutId="underline"
+                        className="absolute w-full h-[2px] bg-white left-0 -bottom-2 rounded-lg"
+                      />
+                    ) : null}
                     {navItem.label}
                   </Link>
                 </li>
