@@ -1,7 +1,73 @@
+"use client";
+// import Transition from "@/components/ui/transition";
+import { motion, useAnimation, useInView } from "framer-motion";
 const Hero = () => {
+  //   const staggerVariants = {
+  //     hidden: {
+  //       y: "100%",
+  //     },
+  //     visible: {
+  //       y: 0,
+  //       transition: { when: "afterChildren", delayChildren: 2 },
+  //     },
+  //   };
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        delayChildren: 5,
+        staggerDirection: 1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
   return (
-    <section>
-      <div></div>
+    <section className="pt-[10rem]">
+      <div className="container">
+        <motion.h1
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="text-h1 flex flex-col font-bold max-w-[70%] m-auto"
+        >
+          <div className="relative overflow-hidden">
+            <motion.span
+              variants={item}
+              initial="hidden"
+              animate="show"
+              className=" ml-[1.5em] inline-block"
+            >
+              Design
+            </motion.span>
+          </div>
+          <div className=" overflow-hidden">
+            <motion.span
+              className="inline-block"
+              variants={item}
+              initial="hidden"
+              animate="show"
+            >
+              Develope
+            </motion.span>
+          </div>
+          <div className=" overflow-hidden">
+            <motion.span
+              variants={item}
+              initial="hidden"
+              animate="show"
+              className=" ml-[1.5em] inline-block"
+            >
+              Implement.
+            </motion.span>
+          </div>
+        </motion.h1>
+      </div>
     </section>
   );
 };
