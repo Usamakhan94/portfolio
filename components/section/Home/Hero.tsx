@@ -1,16 +1,7 @@
 "use client";
 // import Transition from "@/components/ui/transition";
-import { MotionConfig, motion, useAnimation, useInView } from "framer-motion";
+import { MotionConfig, motion } from "framer-motion";
 const Hero = () => {
-  //   const staggerVariants = {
-  //     hidden: {
-  //       y: "100%",
-  //     },
-  //     visible: {
-  //       y: 0,
-  //       transition: { when: "afterChildren", delayChildren: 2 },
-  //     },
-  //   };
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -25,7 +16,7 @@ const Hero = () => {
   return (
     <section className="pt-[10rem]">
       <div className="container">
-        <MotionConfig transition={{ duration: 0.5 }}>
+        <MotionConfig transition={{ duration: 0.5, delay: 0.125 }}>
           <motion.h1
             variants={container}
             initial="hidden"
