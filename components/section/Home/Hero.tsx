@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <section className="pt-[10rem]">
       <div className="container">
-        <MotionConfig transition={{ duration: 0.8 }}>
+        <MotionConfig transition={{ duration: 0.5 }}>
           <motion.h1
             variants={container}
             initial="hidden"
