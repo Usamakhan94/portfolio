@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="container relative">
-        <div className="flex justify-between items-center absolute px-4 w-full top-6 left-0">
+        <div className="flex justify-between items-center absolute z-[9999] px-4 w-full top-6 left-0">
           <Image src="/logo.svg" alt="Logo" width="210" height="60" />
           <div className="flex gap-9">
             <ul className="flex gap-9 items-center">
@@ -41,7 +41,7 @@ const Navbar = () => {
               ))}
             </ul>
             <Link
-              className="rounded-full  h-14 min-w-[10.25rem] relative group"
+              className="rounded-full h-14 min-w-[10.25rem] relative group"
               href=""
             >
               <div className="absolute w-1/2 h-1/2 bg-[#01BAED] -bottom-1 left-1/2 -translate-x-1/2 rounded-full blur-md opacity-30" />

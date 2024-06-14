@@ -28,3 +28,53 @@ export const ArrowCircleIcons = () => {
     </svg>
   );
 };
+
+export const ScrollIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="44"
+      height="83"
+      fill="none"
+      viewBox="0 0 44 83"
+    >
+      <rect
+        width="43"
+        height="82"
+        x="0.5"
+        y="0.5"
+        stroke="url(#paint0_linear_2033_2)"
+        rx="21.5"
+      ></rect>
+      <path fill="url(#pattern0_2033_2)" d="M7 42H37V72H7z"></path>
+      <defs>
+        <pattern
+          id="pattern0_2033_2"
+          width="1"
+          height="1"
+          patternContentUnits="objectBoundingBox"
+        >
+          <use transform="scale(.01)" xlinkHref="#image0_2033_2"></use>
+        </pattern>
+        <linearGradient
+          id="paint0_linear_2033_2"
+          x1="22"
+          x2="22"
+          y1="0"
+          y2="83"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
+        </linearGradient>
+        <image
+          id="image0_2033_2"
+          width="100"
+          height="100"
+          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQElEQVR4nO3cyYoTUQBG4Wg7jzjgCG0vWtGHcOPrOLyE+Ay6d+XChbgQRMEBBbUVVFBRQcS1O90IeuTatRCsrspQSf2Y80E2neqb1D2pDBVyBwNJkiRJkiRJkiRJkiYHrAcuAI+qy/nyN+e2J8Al/nXRIP3E2AB8rwnyDVgwyuyDLLK2RYPMPshSQ5AlgxhkvuERkgWDZMEgWTBIFgySBYNkwSBZMEgWDJIFg2TBIFkwSBYMkgWDZMEgWTBIFgySBYNkwSBZMEgWDJIFg2TBIFkwSBYMkgWDZMEgWTBIFgySBYNkwSBZMEgWDJIFg2TBIFkwSBYMMtPJ3gVsmtbPosvY5TY6v+P/6WIAd4FfwA/gCrC9qyBlLOByNfZP4I6LDDQvJPO0ZnIfADsnDVLGAO7XbPvEBWvqg5xsmOAVYN+4QYDdwOOG7Y+v9UCZW8Apmj3/O8qwQcr/VEGbnOhtx8OfslZaJu4VcHDYIMAB4GXLmOVpcl3f+x8JWAa+tEzgW+BIW5BqmzctY5XbWu57v6MBx4CPLRP5CTjTcP1p4H3LGJ+NMdrb3w8tE/p1zOuoxnZNrRGPlEPAa7r3Djg6ztE79xjuRXkU5TXl8NxP7CSAPdWHt0m9APYbowO0f7Br8wzYa4wOsXoeqpznGtVDTyROCbANuD1CjHvAjmndHw3+RNkM3Bgixi1gq5M2A6x+n3G9IcZNYIsxZghYAK7WxLgGbDRGfyckz1XvwMpi/Gf9bkOSJEmSJEmSJEmSNOjGb/Yeh/2634DWAAAAAElFTkSuQmCC"
+        ></image>
+      </defs>
+    </svg>
+  );
+};
