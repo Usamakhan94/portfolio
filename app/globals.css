@@ -11,6 +11,12 @@
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
+    --card-foreground-hover: #fff;
+    --card-hover: #fff;
+    --card-shadow: inset 0px 2px 0px 0px #01baed, inset 0 0px 2px 0px #007dff,
+      inset 0 0px 2px 0px #3c1477;
+    --card-shadow-hover: inset 0px 2px 0px 0px #fff, inset 0px 0px 2px 0px #fff,
+      inset 0px 0px 2px 0px #fff;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -34,15 +40,21 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 1.25rem;
   }
 
   .dark {
     --background: #05080b;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: #0a1016;
+    --card-foreground: #05080b;
+    --card-foreground-hover: #fff;
+    --card-hover: #fff;
+    --card-shadow: inset 0px 2px 0px 0px #01baed, inset 0 0px 2px 0px #007dff,
+      inset 0 0px 2px 0px #3c1477;
+    --card-shadow-hover: inset 0px 2px 0px 0px #fff, inset 0px 0px 2px 0px #fff,
+      inset 0px 0px 2px 0px #fff;
 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
@@ -85,4 +97,8 @@
     rgba(0, 147, 249, 1) 77%,
     rgba(19, 22, 27, 1) 100%
   );
+}
+
+p {
+  color: #646a6d;
 }

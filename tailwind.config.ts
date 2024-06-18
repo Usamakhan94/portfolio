@@ -31,6 +31,10 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        multi: "var(--card-shadow)",
+        single: "var(--card-shadow-hover)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -64,8 +68,9 @@ const config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+          foregroundHover: "var(--card-foreground-hover)",
         },
       },
       fontSize: {

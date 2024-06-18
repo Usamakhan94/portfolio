@@ -1,6 +1,5 @@
 "use client";
 import { ScrollIcon } from "@/components/ui/icons";
-// import Transition from "@/components/ui/transition";
 import { MotionConfig, motion } from "framer-motion";
 import Image from "next/image";
 const Hero = () => {
@@ -57,7 +56,7 @@ const Hero = () => {
             </div>
           </motion.h1>
         </MotionConfig>
-        <div className="flex flex-col justify-center items-center my-10">
+        <div className="flex flex-col justify-center items-center my-12">
           <div className=" animate-bounce duration-1000">
             <ScrollIcon />
           </div>

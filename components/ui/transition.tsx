@@ -23,14 +23,12 @@ const Transition = ({
       <motion.div
         variants={{
           hidden: {
+            opacity: 0,
             y: "100%",
           },
           visible: {
+            opacity: 1,
             y: 0,
-            transition: {
-              when: "beforeChildren",
-              delayChildren: 1.5,
-            },
           },
         }}
         initial="hidden"
