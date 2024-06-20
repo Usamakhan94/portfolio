@@ -25,9 +25,14 @@ const VisionCard = ({
   }
   return (
     <div
-      className="bg-card rounded-[0.9375rem] px-[2.4375rem] py-[3.75rem] group transition-all duration-300 flex flex-col items-center justify-center gap-7 overflow-hidden text-center cursor-pointer"
+      className="rounded-[0.9375rem] px-[2.4375rem] py-[3.75rem] group transition-all duration-700 flex flex-col items-center justify-center gap-7 text-center cursor-pointer relative overflow-hidden before:absolute before:top-[1px] before:-z-10 before:left-[1px] before:rounded-[0.9375rem] about_cards"
       onMouseEnter={() => setActiveCard(true)}
       onMouseLeave={() => setActiveCard(false)}
+      style={{
+        boxShadow: activeCard
+          ? "inset 0px 0px 0px var(--card), inset 0px 0px 0px var(--card)"
+          : "inset 0px -250px 0px var(--card), inset 0px 250px 0px var(--card)",
+      }}
     >
       <div className="relative isolate pb-4">
         <div className=" w-[8.3125rem] h-[8.3125rem] rounded-full shadow-multi group-hover:shadow-single transition-all duration-300 rotate-45 absolute left-0 top-0 -z-10" />
@@ -36,7 +41,9 @@ const VisionCard = ({
         </div>
       </div>
       <h4 className="text-h4 font-bold leading-none">{cardContent.heading}</h4>
-      <p className="font-medium mb-9">{cardContent.details}</p>
+      <p className="font-medium mb-9 group-hover:text-white transition-all duration-300 ">
+        {cardContent.details}
+      </p>
     </div>
   );
 };
