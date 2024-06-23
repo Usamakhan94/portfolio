@@ -49,6 +49,7 @@
 
     --card: #0a1016;
     --card-foreground: #05080b;
+    --card-foreground-dark: #040609;
     --card-foreground-hover: #fff;
     --card-hover: #fff;
     --card-shadow: inset 0px 2px 0px 0px #01baed, inset 0 0px 2px 0px #007dff,

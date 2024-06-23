@@ -191,6 +191,17 @@ export const VisionIcon = ({ fill }: { fill: boolean }) => {
         {fill ? (
           <linearGradient
             id="paint0_linear_6_67"
+            x1="0%"
+            x2="0%"
+            y1="0%"
+            y2="100%"
+          >
+            <stop offset="0%" stop-color="#fff" />
+            <stop offset="120%" stop-color="#000" />
+          </linearGradient>
+        ) : (
+          <linearGradient
+            id="paint0_linear_6_67"
             x1="27.105"
             x2="27.105"
             y1="-6.539"
@@ -200,17 +211,6 @@ export const VisionIcon = ({ fill }: { fill: boolean }) => {
             <stop stopColor="#0AA4F8"></stop>
             <stop offset="0.485" stopColor="#007DFF"></stop>
             <stop offset="1" stopColor="#3C1477"></stop>
-          </linearGradient>
-        ) : (
-          <linearGradient
-            id="paint0_linear_6_67"
-            x1="0%"
-            x2="0%"
-            y1="0%"
-            y2="100%"
-          >
-            <stop offset="0%" stop-color="#fff" />
-            <stop offset="120%" stop-color="#000" />
           </linearGradient>
         )}
         <image
