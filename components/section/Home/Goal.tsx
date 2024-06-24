@@ -3,6 +3,7 @@ import { ArrowCircleIcons } from "@/components/ui/icons";
 import Pills from "@/components/ui/pill";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Transition from "@/components/ui/transition";
 
 const OurGoal = () => {
   return (
@@ -16,7 +17,9 @@ const OurGoal = () => {
               </span>
             </Pills>
             <h2 className="text-h2 font-bold leading-[1.2]">
-              Our Goal to Satisfied Local & Global Clients
+              <Transition>Our Goal to</Transition>
+              <Transition>Satisfied Local</Transition>
+              <Transition>& Global Clients</Transition>
             </h2>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -32,7 +35,6 @@ const OurGoal = () => {
                 className="rounded-full h-[72px] min-w-[18.75rem] relative group"
                 href=""
               >
-                {/* <div className="absolute w-1/2 h-1/2 bg-[#01BAED] -bottom-1 left-1/2 -translate-x-1/2 rounded-full blur-md opacity-30" /> */}
                 <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
                   <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />
                   <div className="bg-[#05080B] rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
