@@ -9,7 +9,7 @@ const Transition = ({
   className?: string;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   useEffect(() => {
@@ -33,6 +33,7 @@ const Transition = ({
         }}
         initial="hidden"
         animate={mainControls}
+        transition={{ duration: 0.4 }}
         ref={ref}
         className={className}
       >

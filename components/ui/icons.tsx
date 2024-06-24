@@ -116,8 +116,8 @@ export const MissionIcon = ({ fill }: { fill: boolean }) => {
           </linearGradient>
         ) : (
           <linearGradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#fff" />
-            <stop offset="120%" stop-color="#000" />
+            <stop offset="0%" stopColor="#fff" />
+            <stop offset="120%" stopColor="#000" />
           </linearGradient>
         )}
       </defs>
@@ -196,8 +196,8 @@ export const VisionIcon = ({ fill }: { fill: boolean }) => {
             y1="0%"
             y2="100%"
           >
-            <stop offset="0%" stop-color="#fff" />
-            <stop offset="120%" stop-color="#000" />
+            <stop offset="0%" stopColor="#fff" />
+            <stop offset="120%" stopColor="#000" />
           </linearGradient>
         ) : (
           <linearGradient
@@ -283,8 +283,8 @@ export const GoalIcon = ({ fill }: { fill: boolean }) => {
             y1="0%"
             y2="100%"
           >
-            <stop offset="0%" stop-color="#fff" />
-            <stop offset="120%" stop-color="#000" />
+            <stop offset="0%" stopColor="#fff" />
+            <stop offset="120%" stopColor="#000" />
           </linearGradient>
         )}
         <image
