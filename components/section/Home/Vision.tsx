@@ -30,7 +30,7 @@ const Vision = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
-    margin: "-50px -100px -50px -100px",
+    margin: "0px -100px -250px -100px",
   });
 
   const mainControls = useAnimation();
