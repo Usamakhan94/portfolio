@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MissionIcon, VisionIcon, GoalIcon } from "@/components/ui/icons";
 
 const VisionCard = ({
@@ -38,10 +38,10 @@ const VisionCard = ({
     >
       <div className="relative isolate pb-4">
         <div
-          className={`w-[8.3125rem] h-[8.3125rem] rounded-full transition-all duration-300 rotate-45 absolute left-0 top-0 -z-10 ${
+          className={`w-[8.4375rem] h-[8.4375rem] rounded-full transition-all duration-300 rotate-45 absolute -left-[1px] -top-[1px] -z-10 ${
             indexed === 1
               ? "shadow-single group-hover:shadow-multi"
-              : "shadow-multi"
+              : "shadow-multi group-hover:shadow-single"
           }`}
         />
         <div

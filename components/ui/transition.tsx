@@ -9,7 +9,10 @@ const Transition = ({
   className?: string;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, {
+    once: true,
+    margin: "-50px -100px -50px -100px",
+  });
   const mainControls = useAnimation();
 
   useEffect(() => {
