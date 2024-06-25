@@ -25,12 +25,12 @@ const Navbar = () => {
   const ref = useRef(null);
   const mainControls = useAnimation();
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 2) {
-      mainControls.start("shrink");
-      setIsVIew(true);
-    } else {
+    if (latest < 2) {
       mainControls.start("grow");
       setIsVIew(false);
+    } else {
+      mainControls.start("shrink");
+      setIsVIew(true);
     }
   });
 
@@ -53,7 +53,7 @@ const Navbar = () => {
               x: "30%",
               background: `#0a1016`,
               boxShadow:
-                "inset 4px -4px 0px rgba(0,0,0,1), inset -3px 4px 0px rgba(0,0,0,1)",
+                "inset 4px -4px 10px #4C0E49, inset -3px 4px 10px #3C1477, rgb(60, 20, 119) -6px 5px 10px inset",
             },
           }}
           initial="grow"

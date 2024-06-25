@@ -4,12 +4,13 @@ import Pills from "@/components/ui/pill";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Transition from "@/components/ui/transition";
+import Image from "next/image";
 
 const OurGoal = () => {
   return (
-    <section>
+    <section className="pb-52 overflow-x-hidden">
       <div className="container">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 items-center">
           <div className=" pr-16">
             <Pills>
               <span className="leading-none text-white font-bold text-base">
@@ -21,7 +22,7 @@ const OurGoal = () => {
               <Transition>Satisfied Local</Transition>
               <Transition>& Global Clients</Transition>
             </h2>
-            <p>
+            <p className="max-w-[33.75rem] py-10">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inven tore veritatis et quasi architecto beatae vitae
@@ -30,7 +31,7 @@ const OurGoal = () => {
               eos qui ratione voluptatem sequi nesciuntque porro quisquam est,
               qui dolorem ipsum quia
             </p>
-            <div className="flex items-end py-4">
+            <div className="flex items-end">
               <Link
                 className="rounded-full h-[72px] min-w-[18.75rem] relative group"
                 href=""
@@ -65,6 +66,24 @@ const OurGoal = () => {
                   ></motion.path>
                 </svg>
               </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center relative isolate">
+            <div className=" absolute -bottom-[18%] -right-[36%] w-[50rem] h-[50rem] bg-background rounded-full p-[2px] bg-clip-padding overflow-hidden before:w-full before:h-full before:bg-gradient-to-b before:from-transparent before:from-[30%] before:to-white before:to-[70%] before:absolute before:left-0 before:bottom-0 before:-z-10" />
+            <div className="relative isolate pb-24">
+              <Image
+                src="/our-goal-big.png"
+                alt=""
+                fill
+                className="!static max-w-[560px]"
+              />
+              <Image
+                src="/our-goal-small.png"
+                alt=""
+                width="350"
+                height="350"
+                className="absolute max-w-[350px] max-h-[350px] -bottom-6 -left-44"
+              />
             </div>
           </div>
         </div>
