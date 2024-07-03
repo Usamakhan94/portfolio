@@ -5,10 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Transition from "@/components/ui/transition";
 import Image from "next/image";
-import AboutSlides from "./AboutSlides";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode } from "swiper/modules";
-import "swiper/css/free-mode";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const sliderData = [
@@ -105,47 +103,63 @@ const OurGoal = () => {
           </div>
         </div>
       </div>
-      <div className=" pt-52 pb-11">
-        <AboutSlides />
-        {/* <Swiper
-          slidesPerView={4.5}
+      <div className=" overflow-hidden relative mt-52 py-2">
+        <Swiper
+          slidesPerView={4.8}
           centeredSlides={true}
-          grabCursor={true}
           loop={true}
           speed={6000}
           autoplay={{
             delay: -1,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
           spaceBetween={0}
-          freeMode={true}
-          modules={[Autoplay, FreeMode]}
+          modules={[Autoplay]}
+          freeMode={false}
           pagination={{
             clickable: true,
           }}
           className="logo_slider"
         >
-          {sliderData.map((item) => (
-            <SwiperSlide>
-              <div className="flex items-center justify-center relative">
-                <span className="text-h4 font-bold">{item}</span>
+          {sliderData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex items-center justify-center relative px-[30px]">
+                <span
+                  className={`text-h4 font-bold ${
+                    index % 2 === 0 ? "text_stroke" : ""
+                  }`}
+                >
+                  {item}
+                </span>
                 <div className="absolute -right-[17px] w-[34px] h-[34px]">
                   <StarIcon />
                 </div>
               </div>
             </SwiperSlide>
           ))}
-          {sliderData.map((item) => (
-            <SwiperSlide>
+          {sliderData.map((item, index) => (
+            <SwiperSlide key={index}>
               <div className="flex items-center justify-center relative">
-                <span className="text-h4 font-bold">{item}</span>
+                <span
+                  className={`text-h4 font-bold ${
+                    index % 2 !== 0 ? "text_stroke" : ""
+                  }`}
+                >
+                  {item}
+                </span>
                 <div className="absolute -right-[17px] w-[34px] h-[34px]">
                   <StarIcon />
                 </div>
               </div>
             </SwiperSlide>
           ))}
-        </Swiper> */}
+        </Swiper>
+        <div className="absolute top-0 -z-10">
+          <Image src="/top_bnr-shade1.png" alt="" fill className="!static" />
+        </div>
+        <div className="absolute top-0 right-0 -z-10">
+          <Image src="/top_bnr-shade2.png" alt="" fill className="!static" />
+        </div>
       </div>
     </section>
   );

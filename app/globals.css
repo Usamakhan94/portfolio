@@ -99,16 +99,6 @@
     rgba(19, 22, 27, 1) 100%
   );
 }
-/* 
-.card_gradient {
-  background: rgb(10, 164, 248);
-  background: linear-gradient(
-    142deg,
-    rgba(10, 164, 248, 1) 0%,
-    rgba(0, 125, 255, 1) 50%,
-    rgba(60, 20, 119, 1) 100%
-  );
-} */
 
 .about_cards::before {
   background: linear-gradient(
@@ -137,18 +127,11 @@ p {
   color: #646a6d;
 }
 
-.infinite-slide {
-  animation: translateleft 30s linear infinite;
-}
-
-@keyframes translateleft {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
 .logo_slider .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+.text_stroke {
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
 }
