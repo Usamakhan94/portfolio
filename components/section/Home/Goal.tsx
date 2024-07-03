@@ -1,14 +1,31 @@
 "use client";
-import { ArrowCircleIcons } from "@/components/ui/icons";
+import { ArrowCircleIcons, StarIcon } from "@/components/ui/icons";
 import Pills from "@/components/ui/pill";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Transition from "@/components/ui/transition";
 import Image from "next/image";
+import AboutSlides from "./AboutSlides";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules";
+import "swiper/css/free-mode";
+import "swiper/css";
+
+const sliderData = [
+  "Design",
+  "Develop",
+  "Implement",
+  "Design",
+  "Develop",
+  "Implement",
+  "Design",
+  "Develop",
+  "Implement",
+];
 
 const OurGoal = () => {
   return (
-    <section className="pb-52 overflow-x-hidden">
+    <section className="overflow-x-hidden">
       <div className="container">
         <div className="grid grid-cols-2 items-center">
           <div className=" pr-16">
@@ -87,6 +104,48 @@ const OurGoal = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className=" pt-52 pb-11">
+        <AboutSlides />
+        {/* <Swiper
+          slidesPerView={4.5}
+          centeredSlides={true}
+          grabCursor={true}
+          loop={true}
+          speed={6000}
+          autoplay={{
+            delay: -1,
+            disableOnInteraction: true,
+          }}
+          spaceBetween={0}
+          freeMode={true}
+          modules={[Autoplay, FreeMode]}
+          pagination={{
+            clickable: true,
+          }}
+          className="logo_slider"
+        >
+          {sliderData.map((item) => (
+            <SwiperSlide>
+              <div className="flex items-center justify-center relative">
+                <span className="text-h4 font-bold">{item}</span>
+                <div className="absolute -right-[17px] w-[34px] h-[34px]">
+                  <StarIcon />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          {sliderData.map((item) => (
+            <SwiperSlide>
+              <div className="flex items-center justify-center relative">
+                <span className="text-h4 font-bold">{item}</span>
+                <div className="absolute -right-[17px] w-[34px] h-[34px]">
+                  <StarIcon />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper> */}
       </div>
     </section>
   );

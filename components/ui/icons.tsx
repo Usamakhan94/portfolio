@@ -297,3 +297,20 @@ export const GoalIcon = ({ fill }: { fill: boolean }) => {
     </svg>
   );
 };
+
+export const StarIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="33"
+      height="33"
+      fill="none"
+      viewBox="0 0 33 33"
+    >
+      <path
+        fill="#D9D9D9"
+        d="M16.5 0l4.456 12.043L33 16.5l-12.044 4.456L16.5 33l-4.457-12.044L0 16.5l12.043-4.457L16.5 0z"
+      ></path>
+    </svg>
+  );
+};
