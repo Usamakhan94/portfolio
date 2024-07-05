@@ -69,6 +69,7 @@ const config = {
         },
         card: {
           DEFAULT: "var(--card)",
+          background: "var(--primary-card)",
           foreground: "var(--card-foreground)",
           foregrounddark: "var(--card-foreground-dark)",
           foregroundHover: "var(--card-foreground-hover)",
