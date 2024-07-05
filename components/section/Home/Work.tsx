@@ -69,7 +69,7 @@ const PortfolioSection = () => {
             <Pills>
               <span className="font-bold">Portfolio</span>
             </Pills>
-            <h4 className="text-h2 font-bold">Our Portfolio</h4>
+            <h4 className="text-h2 font-bold leading-none">Our Portfolio</h4>
           </div>
           <motion.div style={{ x }} className="flex gap-4 bg-background">
             {cards.map((card) => {
