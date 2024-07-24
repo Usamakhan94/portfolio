@@ -26,7 +26,7 @@ const VisionCard = ({
   }
   return (
     <div
-      className={`rounded-[0.9375rem] px-[2.4375rem] py-[3.75rem] group transition-all duration-700 flex flex-col items-center justify-center gap-7 text-center cursor-pointer relative overflow-hidden before:absolute before:top-[1px] before:-z-10 before:left-[1px] before:rounded-[0.9375rem] ${
+      className={`rounded-[0.9375rem] px-[2.4375rem] py-[3.75rem] group transition-all duration-700 flex flex-col items-center justify-center gap-7 text-center relative overflow-hidden before:absolute before:top-[1px] before:-z-10 before:left-[1px] before:rounded-[0.9375rem] ${
         indexed === 1
           ? "about_cards"
           : indexed === 2

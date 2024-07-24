@@ -10,6 +10,14 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      "2xl": "1600px",
+      xl: "1400px",
+      lg: "1280px",
+      md: "1024px",
+      sm: "800px",
+      xsm: "660px",
+    },
     container: {
       center: true,
       padding: {
@@ -20,14 +28,6 @@ const config = {
         sm: "1rem",
         xsm: "0.625rem",
         DEFAULT: "0.5rem",
-      },
-      screens: {
-        "2xl": "1600px",
-        xl: "1400px",
-        lg: "1280px",
-        md: "1024px",
-        sm: "800px",
-        xsm: "660px",
       },
     },
     extend: {

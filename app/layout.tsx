@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/section/Navbar";
+import AnimatedCursor from "react-animated-cursor";
 
 const syne = Syne({ subsets: ["latin"] });
 
@@ -18,6 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${syne.className} dark`}>
+        <AnimatedCursor
+          color="255, 255 ,255"
+          innerSize={12}
+          outerSize={35}
+          innerScale={1}
+          outerScale={1.7}
+          outerAlpha={1}
+          outerStyle={{
+            mixBlendMode: "exclusion",
+          }}
+        />
         <header>
           <Navbar />
         </header>
