@@ -1,7 +1,7 @@
 "use client";
 import Pills from "@/components/ui/pill";
 import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const cards = [
   {
@@ -47,25 +47,49 @@ const cards = [
 ];
 
 const PortfolioSection = () => {
+  const [cardSize, setCardSize] = useState(750);
+  const [cardsStart, setCardsStart] = useState(350);
+  const [cardEnd, setCardEnd] = useState(1.46);
+
+  const cardsResponsive = () => {
+    setCardSize(window.innerWidth / 2.25);
+    if (window.innerWidth < 1200) {
+      setCardSize(window.innerWidth / 1.65);
+      setCardsStart(250);
+      setCardEnd(0.8);
+    } else if (window.innerWidth < 1440) {
+      setCardSize(window.innerWidth / 1.65);
+      setCardsStart(250);
+      setCardEnd(0.8);
+      return;
+    } else if (window.innerWidth < 1700) {
+      setCardSize(window.innerWidth / 2.4);
+      setCardEnd(1.35);
+      return;
+    }
+  };
+
+  useEffect(() => {
+    cardsResponsive();
+    window.addEventListener("resize", cardsResponsive);
+    return () => window.removeEventListener("resize", cardsResponsive);
+  }, [cardSize]);
+
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  const cardWidth = 750;
-  const cardGap = 16;
-  const cardsStart = 350;
-
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    [`${cardsStart}px`, `-${cards.length * cardWidth - cardWidth * 1.69}px`]
+    [`${cardsStart}px`, `-${cards.length * cardSize - cardSize * cardEnd}px`]
   );
   return (
     <section className=" py-32">
-      <div ref={targetRef} className="relative h-[300vh] ">
+      <div ref={targetRef} className="relative h-[300vh] md:block hidden">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-          <div className="ml-32">
+          <div className="lg:ml-32 ml-6">
             <Pills>
               <span className="font-bold">Portfolio</span>
             </Pills>
@@ -73,32 +97,32 @@ const PortfolioSection = () => {
           </div>
           <motion.div style={{ x }} className="flex gap-4 bg-background">
             {cards.map((card) => {
-              return <Card card={card} key={card.id} />;
+              return (
+                <a
+                  key={card.id}
+                  className={`relative h-screen overflow-hidden bg-card-background`}
+                  style={{ width: `${cardSize}px` }}
+                >
+                  <div
+                    style={{
+                      backgroundImage: `url(${card.url})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                    className="absolute inset-0 z-0 pointer-events-none"
+                  ></div>
+                  <div className="absolute inset-0 z-10 grid place-content-center">
+                    <p className="bg-gradient-to-br from-white/20 to-white/0 p-4 text-h6 font-black uppercase text-white backdrop-blur-lg">
+                      {card.title}
+                    </p>
+                  </div>
+                </a>
+              );
             })}
           </motion.div>
         </div>
       </div>
     </section>
-  );
-};
-
-const Card = ({ card }: { card: any }) => {
-  return (
-    <a className="relative h-screen w-[750px] overflow-hidden bg-card-background">
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 pointer-events-none"
-      ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-4 text-h6 font-black uppercase text-white backdrop-blur-lg">
-          {card.title}
-        </p>
-      </div>
-    </a>
   );
 };
 

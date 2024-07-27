@@ -103,7 +103,7 @@ const OurGoal = () => {
           </div>
         </div>
       </div>
-      <div className=" overflow-hidden relative mt-52 py-2">
+      <div className=" overflow-hidden relative mt-52 py-2 pointer-events-none">
         <Swiper
           slidesPerView={4.8}
           centeredSlides={true}
