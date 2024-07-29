@@ -26,13 +26,13 @@ const OurGoal = () => {
     <section className="overflow-x-hidden">
       <div className="container">
         <div className="grid grid-cols-2 items-center">
-          <div className=" pr-16">
+          <div className=" 2xl:pr-16">
             <Pills>
               <span className="leading-none text-white font-bold text-base">
                 About our Company
               </span>
             </Pills>
-            <h2 className="text-h2 font-bold leading-[1.2]">
+            <h2 className="2xl:text-h2 xl:text-[4.875rem] text-h3 font-bold leading-[1.2]">
               <Transition>Our Goal to</Transition>
               <Transition>Satisfied Local</Transition>
               <Transition>& Global Clients</Transition>
@@ -97,7 +97,7 @@ const OurGoal = () => {
                 alt=""
                 width="350"
                 height="350"
-                className="absolute max-w-[350px] max-h-[350px] -bottom-6 -left-44"
+                className="absolute max-w-[350px] max-h-[350px] -bottom-6 2xl:-left-44 -left-32"
               />
             </div>
           </div>
@@ -105,7 +105,32 @@ const OurGoal = () => {
       </div>
       <div className=" overflow-hidden relative mt-52 py-2 pointer-events-none">
         <Swiper
-          slidesPerView={4.8}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.5,
+              spaceBetween: 10,
+            },
+            660: {
+              slidesPerView: 2.25,
+              spaceBetween: 15,
+            },
+            800: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3.5,
+              spaceBetween: 40,
+            },
+            1400: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+            1600: {
+              slidesPerView: 4.8,
+              spaceBetween: 50,
+            },
+          }}
           centeredSlides={true}
           loop={true}
           speed={6000}
@@ -116,16 +141,16 @@ const OurGoal = () => {
           spaceBetween={0}
           modules={[Autoplay]}
           freeMode={false}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           className="logo_slider"
         >
           {sliderData.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex items-center justify-center relative px-[30px]">
                 <span
-                  className={`text-h4 font-bold ${
+                  className={`xl:text-h4 sm:text-h5 text-h6 font-bold ${
                     index % 2 === 0 ? "text_stroke" : ""
                   }`}
                 >
@@ -141,7 +166,7 @@ const OurGoal = () => {
             <SwiperSlide key={index}>
               <div className="flex items-center justify-center relative">
                 <span
-                  className={`text-h4 font-bold ${
+                  className={`xl:text-h4 sm:text-h5 text-h6 font-bold ${
                     index % 2 !== 0 ? "text_stroke" : ""
                   }`}
                 >

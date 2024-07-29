@@ -30,7 +30,7 @@ const Hero = () => {
           <h6 className=" text-base font-semibold mt-2">Scroll</h6>
         </div>
         <div
-          className=" w-[180px] h-[180px] !bg-no-repeat !bg-cover absolute top-[5%] right-[20%]"
+          className=" w-[180px] h-[180px] !bg-no-repeat !bg-cover absolute xl:top-[5%] top-[26%] xl:right-[20%] right-[10%]"
           style={{ background: "url(/inner-logo.png)" }}
         >
           <Image
@@ -50,10 +50,10 @@ const Hero = () => {
         />
       </div>
       <div className="absolute top-0 -z-10">
-        <Image src="/top_bnr-shade1.png" alt="" fill className="!static" />
+        <img src="/top_bnr-shade1.png" alt="" className="!static" />
       </div>
       <div className="absolute top-0 right-0 -z-10">
-        <Image src="/top_bnr-shade2.png" alt="" fill className="!static" />
+        <img src="/top_bnr-shade2.png" alt="" className="!static" />
       </div>
     </section>
   );

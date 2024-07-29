@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowCircleIcons } from "../ui/icons";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   { href: "", label: "Home" },
@@ -15,6 +15,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [isView, setIsVIew] = useState(false);
+  const [navBarWidth, setNavBarWidth] = useState(60);
 
   const { scrollY } = useScroll();
   const ref = useRef(null);
@@ -27,6 +28,15 @@ const Navbar = () => {
     }
   });
 
+  useEffect(() => {
+    if (window.innerWidth < 1400) {
+      console.log(window.innerWidth);
+      setNavBarWidth(70);
+    } else {
+      setNavBarWidth(60);
+    }
+  }, [window.innerWidth]);
+
   const pathName = usePathname().split("/")[1];
   return (
     <nav className="">
@@ -37,7 +47,7 @@ const Navbar = () => {
           style={{
             transition:
               "all 550ms, background 0ms, box-shadow 0ms, translate 500ms",
-            width: isView ? "60%" : "100%",
+            width: isView ? `${navBarWidth}%` : "100%",
             x: isView ? "-50%" : "0%",
             left: isView ? "50%" : "0%",
             background: isView ? "#0a1016" : "transparent",

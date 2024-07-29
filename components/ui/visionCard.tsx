@@ -56,7 +56,9 @@ const VisionCard = ({
           {iconRendering}
         </div>
       </div>
-      <h4 className="text-h4 font-bold leading-none">{cardContent.heading}</h4>
+      <h4 className="xl:text-h4 text-h5 font-bold leading-none">
+        {cardContent.heading}
+      </h4>
       <p
         className={`font-medium mb-9 transition-all duration-300 ${
           indexed === 1 ? "text-white" : ""
