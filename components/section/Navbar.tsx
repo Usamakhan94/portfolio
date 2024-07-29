@@ -3,12 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowCircleIcons } from "../ui/icons";
-import {
-  motion,
-  useAnimation,
-  useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
 
 const navLinks = [
@@ -23,13 +18,11 @@ const Navbar = () => {
 
   const { scrollY } = useScroll();
   const ref = useRef(null);
-  const mainControls = useAnimation();
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest < 2) {
-      mainControls.start("grow");
+
+  useMotionValueEvent(scrollY, "change", (value) => {
+    if (ref !== null && value < 2) {
       setIsVIew(false);
     } else {
-      mainControls.start("shrink");
       setIsVIew(true);
     }
   });
@@ -41,24 +34,17 @@ const Navbar = () => {
         <motion.div
           ref={ref}
           className={`flex justify-between gap-8 items-center absolute z-[9999] px-3 py-3 rounded-full top-6 left-0`}
-          variants={{
-            grow: {
-              width: "100%",
-              x: 0,
-              background: "transparent",
-              boxShadow: "none",
-            },
-            shrink: {
-              width: "60%",
-              x: "30%",
-              background: `#0a1016`,
-              boxShadow:
-                "inset 4px -4px 10px #4C0E49, inset -3px 4px 10px #3C1477, rgb(60, 20, 119) -6px 5px 10px inset",
-            },
+          style={{
+            transition:
+              "all 550ms, background 0ms, box-shadow 0ms, translate 500ms",
+            width: isView ? "60%" : "100%",
+            x: isView ? "-50%" : "0%",
+            left: isView ? "50%" : "0%",
+            background: isView ? "#0a1016" : "transparent",
+            boxShadow: isView
+              ? "inset 4px -4px 10px #4C0E49, inset -3px 4px 10px #3C1477, rgb(60, 20, 119) -6px 5px 10px inset"
+              : "none",
           }}
-          initial="grow"
-          animate={mainControls}
-          transition={{ type: "Inertia", stiffness: 200 }}
         >
           <Image src="/logo.svg" alt="Logo" width="210" height="60" />
           <div className="flex gap-9">
