@@ -38,13 +38,13 @@ const OurGoal = () => {
               <Transition>& Global Clients</Transition>
             </h2>
             <p className="max-w-[33.75rem] py-10">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inven tore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemoei m ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sedquia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciuntque porro quisquam est,
-              qui dolorem ipsum quia
+              Our Goal is to surpass expectations through the delivery of
+              outstanding service and tailored solutions that cater to both
+              local and global clientele. We are dedicated to comprehending and
+              addressing a diverse range of needs, cultivating robust
+              relationships, and achieving excellence in all endeavors. Our
+              commitment to quality and meticulous attention to detail ensures
+              enduring satisfaction and fosters enduring global partnerships.
             </p>
             <div className="flex items-end">
               <Link

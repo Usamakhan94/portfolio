@@ -7,24 +7,15 @@ const Vision = () => {
   const content = [
     {
       heading: "Our Mission",
-      details: `Sed ut perspiciatis unde omnis iste natus error sit volupt atem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inven tore veritats etqu asi architecto beatae vitae
-              dicta sunt explicabo.`,
+      details: `Our Mission is to deliver superior web design and development solutions, including bespoke web and app services. We are dedicated to creating elegant, user-focused digital experiences that fulfill our clients' unique objectives with exceptional precision.`,
     },
     {
       heading: "Our Vision",
-      details: `Sed ut perspiciatis unde omnis iste natus error sit volupt atem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inven tore veritats etqu asi architecto beatae vitae
-              dicta sunt explicabo.`,
+      details: `Our Vision is to be the leading provider of innovative web design and development solutions. We aspire to set new industry standards by delivering exceptional, user-centric digital experiences that drive progress and elevate our clients' success globally.`,
     },
     {
       heading: "Our Goal",
-      details: `Sed ut perspiciatis unde omnis iste natus error sit volupt atem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inven tore veritats etqu asi architecto beatae vitae
-              dicta sunt explicabo.`,
+      details: `Our Goal is to revolutionize the digital realm with innovative web design and development. We aim to enhance client success by providing groundbreaking, customized solutions that engage users and establish new standards of excellence.`,
     },
   ];
   const ref = useRef(null);
