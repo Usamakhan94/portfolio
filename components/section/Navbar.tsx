@@ -16,6 +16,7 @@ const navLinks = [
 const Navbar = () => {
   const [isView, setIsVIew] = useState(false);
   const [navBarWidth, setNavBarWidth] = useState(60);
+  const [windowResize, setWindowResize] = useState(0);
 
   const { scrollY } = useScroll();
   const ref = useRef(null);
@@ -29,13 +30,18 @@ const Navbar = () => {
   });
 
   useEffect(() => {
-    if (window.innerWidth < 1400) {
-      console.log(window.innerWidth);
-      setNavBarWidth(70);
-    } else {
-      setNavBarWidth(60);
-    }
-  }, [window.innerWidth]);
+    const handleResize = () => {
+      setWindowResize(window.innerWidth);
+      if (window.innerWidth < 1400) {
+        setNavBarWidth(70);
+      } else {
+        setNavBarWidth(60);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [windowResize]);
 
   const pathName = usePathname().split("/")[1];
   return (
