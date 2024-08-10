@@ -6,10 +6,12 @@ const Hero = () => {
   return (
     <section className="pt-[10rem] relative isolate">
       <div className="container relative">
-        <h1 className="text-h1 flex flex-col font-bold max-w-[70%] m-auto">
+        <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] xsm:max-w-[80%] m-auto">
           <div className="relative overflow-hidden">
             <Transition>
-              <span className=" ml-[1.5em] inline-block">Design</span>
+              <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
+                Design
+              </span>
             </Transition>
           </div>
           <div className=" overflow-hidden">
@@ -19,7 +21,9 @@ const Hero = () => {
           </div>
           <div className=" overflow-hidden">
             <Transition>
-              <span className=" ml-[1.5em] inline-block">Implement.</span>
+              <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
+                Implement.
+              </span>
             </Transition>
           </div>
         </h1>
@@ -30,7 +34,7 @@ const Hero = () => {
           <h6 className=" text-base font-semibold mt-2">Scroll</h6>
         </div>
         <div
-          className=" w-[180px] h-[180px] !bg-no-repeat !bg-cover absolute xl:top-[5%] top-[26%] xl:right-[20%] right-[10%]"
+          className=" md:w-[180px] md:h-[180px] sm:w-[160px] xsm:w-[120px] w-[80px] sm:h-[160px] xsm:h-[120px] h-[80px] !bg-no-repeat !bg-cover absolute xl:top-[5%] lg:top-[26%] sm:top-[14%] top-[-14%] xl:right-[20%] lg:right-[10%] right-[10%] overflow-hidden"
           style={{ background: "url(/inner-logo.png)" }}
         >
           <Image
@@ -41,7 +45,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="absolute w-[1200px] h-[700px] pointer-events-none top-[15%] -z-10 -left-[5%]">
+      <div className="absolute lg:w-[1200px] md:w-[56.25rem] xsm:w-[500px] w-[300px] lg:h-[700px] md:h-[500px] xsm:h-[400px] h-[200px] pointer-events-none top-[15%] -z-10 -left-[5%]">
         <Image
           className="object-contain"
           src="/main_bnr.webp"

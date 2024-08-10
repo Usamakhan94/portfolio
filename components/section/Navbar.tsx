@@ -154,8 +154,20 @@ const Navbar = () => {
           }`}
         >
           <div className="flex items-end justify-start pl-3">
-            <Image src="/logo.svg" alt="Logo" width="70" height="60" />
-            <Image src="/logo-title.svg" alt="Logo" width="101" height="60" />
+            <Image
+              className="xsm:max-w-[70px] max-w-[50px]"
+              src="/logo.svg"
+              alt="Logo"
+              width="70"
+              height="60"
+            />
+            <Image
+              className="xsm:max-w-[101px] max-w-[80px]"
+              src="/logo-title.svg"
+              alt="Logo"
+              width="101"
+              height="60"
+            />
           </div>
           <nav ref={scope} className="grid place-items-center">
             <MotionConfig

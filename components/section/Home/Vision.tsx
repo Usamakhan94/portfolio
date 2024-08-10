@@ -49,7 +49,7 @@ const Vision = () => {
           }}
           initial="hidden"
           animate={mainControls}
-          className="grid grid-cols-3 gap-9"
+          className="grid lg:grid-cols-3 gap-9"
         >
           {content.map((visonContent, index: any) => (
             <motion.div
