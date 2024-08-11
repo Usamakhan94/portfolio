@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="pt-[10rem] relative isolate">
       <div className="container relative">
-        <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] xsm:max-w-[80%] m-auto">
+        <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] w-fit xsm:max-w-[80%] m-auto">
           <div className="relative overflow-hidden">
             <Transition>
               <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </h1>
         <div className="flex flex-col justify-center items-center my-12">
-          <div className=" animate-bounce duration-1000">
+          <div className=" animate-bounce duration-1000 xsm:max-w-11 max-w-8">
             <ScrollIcon />
           </div>
           <h6 className=" text-base font-semibold mt-2">Scroll</h6>

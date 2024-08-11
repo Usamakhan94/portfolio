@@ -32,7 +32,7 @@ const Vision = () => {
   }, [isInView]);
 
   return (
-    <section className=" py-32">
+    <section className=" xsm:py-32 py-5">
       <div className="container">
         <motion.div
           ref={ref}
@@ -49,7 +49,7 @@ const Vision = () => {
           }}
           initial="hidden"
           animate={mainControls}
-          className="grid lg:grid-cols-3 gap-9"
+          className="grid lg:grid-cols-3 xsm:gap-9 gap-4"
         >
           {content.map((visonContent, index: any) => (
             <motion.div
