@@ -4,7 +4,7 @@ import Transition from "@/components/ui/transition";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <section className="pt-[10rem] relative isolate">
+    <section className="pt-[10rem] relative isolate xsm:h-auto h-screen xsm:block flex justify-center items-center">
       <div className="container relative">
         <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] w-fit xsm:max-w-[80%] m-auto">
           <div className="relative overflow-hidden">
