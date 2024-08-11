@@ -4,7 +4,7 @@ import Transition from "@/components/ui/transition";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <section className="xsm:pt-[10rem] relative isolate xsm:h-auto h-screen xsm:block flex justify-center items-center">
+    <section className="xsm:pt-[10rem] pt-[5rem] relative isolate xsm:h-auto h-screen xsm:block flex justify-center items-center">
       <div className="container relative">
         <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] w-fit xsm:max-w-[80%] m-auto">
           <div className="relative overflow-hidden">
@@ -27,7 +27,7 @@ const Hero = () => {
             </Transition>
           </div>
         </h1>
-        <div className="flex flex-col justify-center items-center my-12">
+        <div className="flex flex-col justify-center items-center xsm:my-12 mt-48">
           <div className=" animate-bounce duration-1000 xsm:max-w-11 max-w-8">
             <ScrollIcon />
           </div>

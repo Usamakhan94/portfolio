@@ -37,10 +37,11 @@ const Vision = () => {
         <motion.div
           ref={ref}
           variants={{
-            hidden: { y: 100, opacity: 0 },
+            hidden: { y: 100, opacity: 0, filter: "blur(10px)" },
             visible: {
               y: 0,
               opacity: 1,
+              filter: "blur(0px)",
               transition: {
                 staggerChildren: 0.5,
                 duration: 0.4,
