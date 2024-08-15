@@ -25,19 +25,19 @@ const OurGoal = () => {
   return (
     <section className="overflow-x-hidden">
       <div className="container">
-        <div className="grid grid-cols-2 items-center">
-          <div className=" 2xl:pr-16">
+        <div className="grid lg:grid-cols-2 md:grid-cols-3 items-center">
+          <div className=" 2xl:pr-16 lg:col-span-1 md:col-span-2">
             <Pills>
-              <span className="leading-none text-white font-bold text-base">
+              <span className="leading-none text-white font-bold xsm:text-base text-sm">
                 About our Company
               </span>
             </Pills>
-            <h2 className="2xl:text-h2 xl:text-[4.875rem] text-h3 font-bold leading-[1.2]">
+            <h2 className="2xl:text-h2 xl:text-[4.875rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2]">
               <Transition>Our Goal to</Transition>
               <Transition>Satisfied Local</Transition>
               <Transition>& Global Clients</Transition>
             </h2>
-            <p className="max-w-[33.75rem] py-10">
+            <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:py-10 py-6 text-sm xsm:text-body">
               Our Goal is to surpass expectations through the delivery of
               outstanding service and tailored solutions that cater to both
               local and global clientele. We are dedicated to comprehending and
@@ -48,20 +48,22 @@ const OurGoal = () => {
             </p>
             <div className="flex items-end">
               <Link
-                className="rounded-full h-[72px] min-w-[18.75rem] relative group"
+                className="rounded-full xsm:h-[72px] h-[58px] xsm:min-w-[18.75rem] min-w-[17.5rem] relative group"
                 href=""
               >
                 <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
                   <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />
                   <div className="bg-[#05080B] rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
-                    <span className=" text-h6 font-medium">Get in Touch</span>
+                    <span className=" xsm:text-h6 text-body font-medium">
+                      Get in Touch
+                    </span>
                     <span className="group-hover:rotate-45 transition-all">
                       <ArrowCircleIcons />
                     </span>
                   </div>
                 </div>
               </Link>
-              <div className=" ml-10 mb-5">
+              <div className=" ml-10 mb-5 xsm:block hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="54"
@@ -83,27 +85,33 @@ const OurGoal = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center relative isolate">
-            <div className=" absolute -bottom-[18%] -right-[36%] w-[50rem] h-[50rem] bg-background rounded-full p-[2px] bg-clip-padding overflow-hidden before:w-full before:h-full before:bg-gradient-to-b before:from-transparent before:from-[30%] before:to-white before:to-[70%] before:absolute before:left-0 before:bottom-0 before:-z-10" />
-            <div className="relative isolate pb-24">
+          <div className="flex lg:justify-center md:justify-end sm:justify-center justify-start items-center relative isolate md:mt-0 mt-8">
+            <div
+              className=" absolute -bottom-[18%] lg:-right-[36%] md:-right-[60%] right-[10%] w-[50rem] h-[50rem] rounded-full"
+              style={{
+                backgroundImage: "url(/gradient-circle.png)",
+                backgroundSize: "100% 100%",
+              }}
+            />
+            <div className="relative isolate md:pb-24 hidden xsm:block">
               <Image
                 src="/our-goal-big.png"
                 alt=""
                 fill
-                className="!static max-w-[560px]"
+                className="!static md:max-w-[560px] max-w-full"
               />
               <Image
                 src="/our-goal-small.png"
                 alt=""
                 width="350"
                 height="350"
-                className="absolute max-w-[350px] max-h-[350px] -bottom-6 2xl:-left-44 -left-32"
+                className="absolute md:max-h-[350px] md:-bottom-6 bottom-36 2xl:-left-44 lg:-left-32 md:-left-24 sm:left-60 left-80"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className=" overflow-hidden relative mt-52 py-2 pointer-events-none">
+      <div className=" overflow-hidden relative sm:mt-52 mt-16 py-2 pointer-events-none">
         <Swiper
           breakpoints={{
             0: {
@@ -141,9 +149,6 @@ const OurGoal = () => {
           spaceBetween={0}
           modules={[Autoplay]}
           freeMode={false}
-          // pagination={{
-          //   clickable: true,
-          // }}
           className="logo_slider"
         >
           {sliderData.map((item, index) => (
