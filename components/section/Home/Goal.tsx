@@ -87,7 +87,7 @@ const OurGoal = () => {
           </div>
           <div className="flex lg:justify-center md:justify-end sm:justify-center justify-start items-center relative isolate md:mt-0 mt-8">
             <div
-              className=" absolute -bottom-[18%] lg:-right-[36%] md:-right-[60%] right-[10%] w-[50rem] h-[50rem] rounded-full"
+              className=" absolute -bottom-[18%] lg:-right-[36%] md:-right-[60%] right-[10%] w-[50rem] h-[50rem] rounded-full pointer-events-none"
               style={{
                 backgroundImage: "url(/gradient-circle.png)",
                 backgroundSize: "100% 100%",
@@ -111,7 +111,7 @@ const OurGoal = () => {
           </div>
         </div>
       </div>
-      <div className=" overflow-hidden relative sm:mt-52 mt-16 py-2 pointer-events-none">
+      <div className=" overflow-hidden relative sm:mt-52 xsm:mt-16 mt-8 py-2 pointer-events-none">
         <Swiper
           breakpoints={{
             0: {
