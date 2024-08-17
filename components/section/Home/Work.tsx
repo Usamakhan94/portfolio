@@ -97,7 +97,7 @@ const PortfolioSection = () => {
             </Pills>
             <h4 className="text-h2 font-bold leading-none">Our Portfolio</h4>
             <Link
-              className="rounded-full block mt-7 self-center xsm:h-[72px] h-[58px] xsm:min-w-[16.75rem] min-w-[17.5rem] w-fit relative group"
+              className="rounded-full block mt-7 mb-1 self-center xsm:h-[72px] h-[58px] xsm:min-w-[16.75rem] min-w-[17.5rem] w-fit relative group"
               href="#"
             >
               <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">

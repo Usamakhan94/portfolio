@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
+import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/section/Navbar";
 import AnimatedCursor from "react-animated-cursor";
+// import Footer from "@/components/section/Footer";
 
 const syne = Syne({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Aviorsol",
@@ -18,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${syne.className} dark`}>
+      <body className={`${syne.className} ${inter.variable} dark`}>
         <div className="md:block hidden">
           <AnimatedCursor
             color="255, 255 ,255"
@@ -36,6 +38,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );

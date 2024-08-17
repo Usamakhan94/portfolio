@@ -37,7 +37,7 @@ const config = {
       },
       colors: {
         border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
+        input: "var(--input)",
         ring: "hsl(var(--ring))",
         background: "var(--background)",
         foreground: "hsl(var(--foreground))",
@@ -74,6 +74,9 @@ const config = {
           foregrounddark: "var(--card-foreground-dark)",
           foregroundHover: "var(--card-foreground-hover)",
         },
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
       },
       fontSize: {
         h1: "120px",

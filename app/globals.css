@@ -8,6 +8,7 @@
     --foreground: 222.2 84% 4.9%;
     --button: #0b0d10;
     --links: #566a76;
+    --input: #101a23;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -37,7 +38,6 @@
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
     --radius: 1.25rem;
@@ -46,6 +46,7 @@
   .dark {
     --background: #05080b;
     --foreground: 210 40% 98%;
+    --input: #101a23;
 
     --card: #0a1016;
     --card-foreground: #05080b;
@@ -77,7 +78,6 @@
     --destructive-foreground: 210 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
 }
@@ -135,4 +135,40 @@ p {
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: #fff;
   color: transparent;
+}
+label.custom_label span {
+  top: 0.5rem;
+  left: 20px;
+  transition: all 250ms;
+}
+label.custom_label input:focus-within + span,
+label.custom_label textarea:focus-within + span {
+  top: -0.5rem;
+  left: 0px;
+}
+.gradient_bg {
+  background: linear-gradient(45deg, #007dff 0%, #3c1477 55%);
+  background-size: 200%;
+}
+.gradient_bg.loading {
+  animation: loading 2s linear infinite alternate;
+}
+@keyframes loading {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+.gradient_bg.loading svg {
+  animation: rotatingLoading 1.5s linear infinite;
+}
+@keyframes rotatingLoading {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
 }
