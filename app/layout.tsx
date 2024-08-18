@@ -3,7 +3,7 @@ import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/section/Navbar";
 import AnimatedCursor from "react-animated-cursor";
-// import Footer from "@/components/section/Footer";
+import Footer from "@/components/section/Footer";
 
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -38,7 +38,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

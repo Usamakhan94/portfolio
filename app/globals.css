@@ -172,3 +172,8 @@ label.custom_label textarea:focus-within + span {
     rotate: 360deg;
   }
 }
+
+.footer_icons svg {
+  width: 100%;
+  height: 100%;
+}
