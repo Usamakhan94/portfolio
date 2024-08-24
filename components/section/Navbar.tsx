@@ -216,6 +216,7 @@ const Navbar = () => {
                 {navLinks.map((navItem) => (
                   <li key={navItem.label}>
                     <Link
+                      onClick={() => setActive((prev) => !prev)}
                       className={`relative text-nowrap ${
                         pathName === navItem.href ? "text-white" : "text-link"
                       }`}

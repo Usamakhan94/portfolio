@@ -2,31 +2,51 @@
 import { ScrollIcon } from "@/components/ui/icons";
 import Transition from "@/components/ui/transition";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 const Hero = () => {
+  const [Loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const siteLoaded = () => {
+  //     setTimeout(() => {
+  //       setLoading(true);
+  //     }, 100);
+  //   };
+  //   console.log(document.readyState);
+  //   if (document.readyState === "complete") {
+  //     siteLoaded();
+  //   }
+  // }, []);
+  // document.addEventListener("DOMContentLoaded", () =>
+  //   console.log("DOMContentLoaded")
+  // );
+
   return (
-    <section className="xsm:pt-[10rem] pt-[5rem] relative isolate xsm:h-auto h-screen xsm:block flex justify-center items-center">
+    <section className="xsm:pt-[10rem] pt-[5rem] relative isolate h-screen xsm:block flex justify-center items-center">
       <div className="container relative">
-        <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] w-fit xsm:max-w-[80%] m-auto">
-          <div className="relative overflow-hidden">
-            <Transition>
-              <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
-                Design
-              </span>
-            </Transition>
-          </div>
-          <div className=" overflow-hidden">
-            <Transition>
-              <span>Develope</span>
-            </Transition>
-          </div>
-          <div className=" overflow-hidden">
-            <Transition>
-              <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
-                Implement.
-              </span>
-            </Transition>
-          </div>
-        </h1>
+        {Loading && (
+          <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] w-fit xsm:max-w-[80%] m-auto">
+            <div className="relative overflow-hidden">
+              <Transition>
+                <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
+                  Design
+                </span>
+              </Transition>
+            </div>
+            <div className=" overflow-hidden">
+              <Transition>
+                <span>Develope</span>
+              </Transition>
+            </div>
+            <div className=" overflow-hidden">
+              <Transition>
+                <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
+                  Implement.
+                </span>
+              </Transition>
+            </div>
+          </h1>
+        )}
         <div className="flex flex-col justify-center items-center xsm:my-12 mt-48">
           <div className=" animate-bounce duration-1000 xsm:max-w-11 max-w-8">
             <ScrollIcon />

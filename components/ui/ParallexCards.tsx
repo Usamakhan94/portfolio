@@ -8,8 +8,6 @@ const Card = ({
   title,
   description,
   src,
-  //   url,
-  //   color,
   progress,
   range,
   targetScale,
@@ -18,8 +16,6 @@ const Card = ({
   title: string;
   description: string;
   src: string;
-  //   url: string;
-  //   color: string;
   progress: any;
   range: any;
   targetScale: any;
@@ -39,7 +35,7 @@ const Card = ({
       className="h-[80vh] flex items-center justify-center sticky top-0"
     >
       <motion.div
-        className="flex flex-col relative h-[80%] w-[80%] rounded-[1.25rem] p-12 origin-top backdrop-blur-[10px] bg-black/70 overflow-hidden border border-white/10"
+        className="flex flex-col relative h-[80%] w-[80%] rounded-[1.25rem] p-12 origin-top  bg-black/70 overflow-hidden border border-white/10"
         style={{
           scale,
           top: `calc(10vh + ${i * 25}px)`,
@@ -52,7 +48,7 @@ const Card = ({
           {title}
         </h2>
 
-        <div className="flex h-full mt-[3.125rem] gap-[3.125rem]">
+        <div className="flex items-center h-full mt-[3.125rem] gap-[3.125rem]">
           <div className="w-[40%] relative top-[10%] text-body first-letter:text-h6">
             <p>{description}</p>
 
