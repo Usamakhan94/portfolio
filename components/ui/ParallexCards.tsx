@@ -35,14 +35,14 @@ const Card = ({
       className="h-[80vh] flex items-center justify-center sticky top-0"
     >
       <motion.div
-        className="flex flex-col relative h-[80%] w-[80%] rounded-[1.25rem] p-12 origin-top  bg-black/70 overflow-hidden border border-white/10"
+        className="flex flex-col relative h-[80%] w-[80%] rounded-[1.25rem] p-12 origin-top bg-card-foregrounddark overflow-hidden border border-white/10"
         style={{
           scale,
           top: `calc(10vh + ${i * 25}px)`,
         }}
       >
         <div className="absolute -bottom-[60%] left-1/2 -translate-x-1/2 w-full -z-50 pointer-events-none max-w-[120rem] blur-[3.125rem] ">
-          <img src="/colored_bg.png" className="w-full" alt="" />
+          <Image fill src="/colored_bg.png" className="w-full" alt="" />
         </div>
         <h2 className="xl:text-[3.375rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2] m-auto">
           {title}

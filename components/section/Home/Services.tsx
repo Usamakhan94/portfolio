@@ -56,7 +56,7 @@ const Services = () => {
   });
 
   return (
-    <section>
+    <section className="relative">
       <div className="container">
         <div className="flex items-center justify-center flex-col mt-20">
           <Pills>
