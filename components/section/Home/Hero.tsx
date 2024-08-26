@@ -22,13 +22,13 @@ const Hero = () => {
   // );
 
   return (
-    <section className="xsm:pt-[10rem] pt-[5rem] relative isolate h-screen xsm:block flex justify-center items-center">
-      <div className="absolute -top-[62.5rem] left-1/2 -translate-x-1/2 w-full -z-50 pointer-events-none max-w-[120rem] blur-[3.125rem]">
+    <section className="xsm:pt-[10rem] pt-[5rem] relative isolate min-h-screen xsm:block flex justify-center items-center">
+      <div className="absolute 2xl:-top-[62.5rem] xl:-top-[42.5rem] md:-top-[32.5rem] sm:-top-[22.5rem] -top-[1.5rem] left-1/2 -translate-x-1/2 w-full -z-50 pointer-events-none max-w-[120rem] blur-[3.125rem]">
         <img src="/colored_bg.png" className="w-full" alt="" />
       </div>
       <div className="container relative">
         {Loading && (
-          <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold lg:max-w-[70%] w-fit xsm:max-w-[80%] m-auto">
+          <h1 className="lg:text-h1 xsm:text-h2 text-h4 flex flex-col font-bold w-fit m-auto">
             <div className="relative overflow-hidden">
               <Transition>
                 <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
