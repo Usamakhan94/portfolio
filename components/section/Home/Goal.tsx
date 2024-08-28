@@ -38,13 +38,14 @@ const OurGoal = () => {
               <Transition>& Global Clients</Transition>
             </h2>
             <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:py-10 py-6 text-sm xsm:text-body">
-              Our Goal is to surpass expectations through the delivery of
-              outstanding service and tailored solutions that cater to both
-              local and global clientele. We are dedicated to comprehending and
-              addressing a diverse range of needs, cultivating robust
-              relationships, and achieving excellence in all endeavors. Our
-              commitment to quality and meticulous attention to detail ensures
-              enduring satisfaction and fosters enduring global partnerships.
+              We transform digital landscapes with innovative web development
+              solutions. Specializing in tailored, high-performance websites and
+              fintech services, we deliver secure payment gateways and
+              comprehensive financial platforms. Our expertise ensures clients
+              stay ahead in modern finance. Partner with{" "}
+              <b className="text-white/70">AVIORSOL</b> to unlock the full
+              potential of your digital strategy and achieve your business
+              goals.
             </p>
             <div className="flex items-end">
               <Link

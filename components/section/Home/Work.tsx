@@ -1,6 +1,7 @@
 "use client";
 import { ArrowCircleIcons } from "@/components/ui/icons";
 import Pills from "@/components/ui/pill";
+import Transition from "@/components/ui/transition";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -155,9 +156,13 @@ const PortfolioSection = () => {
               <Link
                 href="#"
                 key={index}
-                className=" xsm:first:row-span-2 xsm:first:h-[21.875rem] xsm:[&:nth-last-child(4n)]:row-span-2 xsm:[&:nth-last-child(4n)]:h-[21.875rem] min-h-[160px] bg-card rounded-[10px] grid place-items-center overflow-hidden"
+                className=" xsm:first:row-span-2 xsm:first:h-[21.875rem] xsm:[&:nth-last-child(4n)]:row-span-2 xsm:[&:nth-last-child(4n)]:h-[21.875rem] min-h-[160px]"
               >
-                <h4 className="text-h4 text-secondary">{item.title}</h4>
+                <Transition className="h-full">
+                  <div className=" h-full bg-card rounded-[10px] grid place-items-center overflow-hidden">
+                    <h4 className="text-h4 text-secondary">{item.title}</h4>
+                  </div>
+                </Transition>
               </Link>
             );
           })}

@@ -76,12 +76,6 @@ const Hero = () => {
           fill
         />
       </div>
-      {/* <div className="absolute top-0 -z-10">
-        <img src="/top_bnr-shade1.png" alt="" className="!static" />
-      </div>
-      <div className="absolute top-0 right-0 -z-10">
-        <img src="/top_bnr-shade2.png" alt="" className="!static" />
-      </div> */}
     </section>
   );
 };
