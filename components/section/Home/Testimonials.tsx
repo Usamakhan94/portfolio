@@ -42,11 +42,11 @@ const Testimonials = () => {
           <SwiperSlide>
             <div>
               <p className="text-white font-semibold sm:text-base text-sm pb-7">
-                Aviorsol's creative web development solutions improved our
+                {`Aviorsol's creative web development solutions improved our
                 online presence. Their competence, careful attention to detail,
                 and constant commitment to quality resulted in a high-performing
                 website that flawlessly complements our corporate
-                objectives.Highly recommended for any web development needs!
+                objectives.Highly recommended for any web development needs!`}
               </p>
               <div className="flex items-center justify-start gap-5 pt-7 border-t border-white/10">
                 <Image
@@ -58,7 +58,7 @@ const Testimonials = () => {
                 />
                 <Transition>
                   <h6 className="sm:text-h5 xsm:text-h6 text-base font-bold leading-none">
-                    Deborah Tailor
+                    {`Deborah Tailor`}
                   </h6>
                 </Transition>
               </div>
@@ -67,11 +67,11 @@ const Testimonials = () => {
           <SwiperSlide>
             <div>
               <p className="text-white font-semibold sm:text-base text-sm pb-7">
-                Working with Aviorsol was a game-changer for our company. Their
+                {`Working with Aviorsol was a game-changer for our company. Their
                 innovative approach and dedication to quality resulted in a
                 robust and scalable software solution that perfectly meets our
                 needs. Their team's professionalism and technical expertise are
-                second to none. Highly recommended!
+                second to none. Highly recommended!`}
               </p>
               <div className="flex items-center justify-start gap-5 pt-7 border-t border-white/10">
                 <Image
@@ -83,7 +83,7 @@ const Testimonials = () => {
                 />
                 <Transition>
                   <h6 className="sm:text-h5 xsm:text-h6 text-base font-bold leading-none">
-                    Vijay Sharma
+                    {`Vijay Sharma`}
                   </h6>
                 </Transition>
               </div>
@@ -92,11 +92,11 @@ const Testimonials = () => {
           <SwiperSlide>
             <div>
               <p className="text-white font-semibold sm:text-base text-sm pb-7">
-                Aviorsol's outstanding web development services far surpassed
+                {`Aviorsol's outstanding web development services far surpassed
                 our expectations. Their group created an amazing, easy-to-use
                 website that precisely represents our company. Furthermore, our
                 project is completed on schedule, fully tested, and highly
-                recommended.
+                recommended.`}
               </p>
               <div className="flex items-center justify-start gap-5 pt-7 border-t border-white/10">
                 <Image
@@ -108,7 +108,7 @@ const Testimonials = () => {
                 />
                 <Transition>
                   <h6 className="sm:text-h5 xsm:text-h6 text-base font-bold leading-none">
-                    Isabell Collins
+                    {`Isabell Collins`}
                   </h6>
                 </Transition>
               </div>
@@ -117,11 +117,11 @@ const Testimonials = () => {
           <SwiperSlide>
             <div>
               <p className="text-white font-semibold sm:text-base text-sm pb-7">
-                Aviorsol delivered an outstanding software solution that has
+                {`Aviorsol delivered an outstanding software solution that has
                 greatly improved our operations. Their attention to detail,
                 responsive support, and deep understanding of our requirements
                 ensured a seamless development process. We are thrilled with the
-                results and grateful for their exceptional service.
+                results and grateful for their exceptional service.`}
               </p>
               <div className="flex items-center justify-start gap-5 pt-7 border-t border-white/10">
                 <Image
@@ -133,7 +133,7 @@ const Testimonials = () => {
                 />
                 <Transition>
                   <h6 className="sm:text-h5 xsm:text-h6 text-base font-bold leading-none">
-                    John Williams
+                    {`John Williams`}
                   </h6>
                 </Transition>
               </div>
@@ -142,12 +142,12 @@ const Testimonials = () => {
           <SwiperSlide>
             <div>
               <p className="text-white font-semibold sm:text-base text-sm pb-7">
-                Our experience with Aviorsol was fantastic. They provided a
+                {`Our experience with Aviorsol was fantastic. They provided a
                 custom software solution that was both efficient and
                 user-friendly. Their team's commitment to excellence and their
                 ability to translate our vision into a functional product made
                 the entire process smooth and successful. We highly endorse
-                their services.
+                their services.`}
               </p>
               <div className="flex items-center justify-start gap-5 pt-7 border-t border-white/10">
                 <Image
@@ -159,7 +159,7 @@ const Testimonials = () => {
                 />
                 <Transition>
                   <h6 className="sm:text-h5 xsm:text-h6 text-base font-bold leading-none">
-                    Micheal Smith
+                    {`Micheal Smith`}
                   </h6>
                 </Transition>
               </div>
@@ -168,9 +168,9 @@ const Testimonials = () => {
           <SwiperSlide>
             <div>
               <p className="text-white font-semibold sm:text-base text-sm pb-7">
-                My experience working with Aviorsol was fantastic; they have a
+                {`My experience working with Aviorsol was fantastic; they have a
                 very skilled team, and they delivered my project just as I had
-                requested. I would strongly recommend them.
+                requested. I would strongly recommend them.`}
               </p>
               <div className="flex items-center justify-start gap-5 pt-7 border-t border-white/10">
                 <Image
@@ -182,7 +182,7 @@ const Testimonials = () => {
                 />
                 <Transition>
                   <h6 className="sm:text-h5 xsm:text-h6 text-base font-bold leading-none">
-                    Nikita Nanda
+                    {`Nikita Nanda`}
                   </h6>
                 </Transition>
               </div>
