@@ -23,7 +23,7 @@ const sliderData = [
 
 const OurGoal = () => {
   return (
-    <section className="overflow-x-hidden">
+    <section id="about" className="overflow-x-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 md:grid-cols-3 items-center">
           <div className=" 2xl:pr-16 lg:col-span-1 md:col-span-2">
@@ -50,7 +50,7 @@ const OurGoal = () => {
             <div className="flex items-end">
               <Link
                 className="rounded-full xsm:h-[72px] h-[58px] xsm:min-w-[18.75rem] min-w-[17.5rem] relative group"
-                href=""
+                href="#contact"
               >
                 <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
                   <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />

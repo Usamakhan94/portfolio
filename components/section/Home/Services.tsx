@@ -79,7 +79,10 @@ const Services = () => {
   });
 
   return (
-    <section className="relative md:pb-24 sm:pb-28 xsm:pb-40 pb-60">
+    <section
+      id="services"
+      className="relative md:pb-24 sm:pb-28 xsm:pb-40 pb-60"
+    >
       <div className="container">
         <div className="flex items-center justify-center flex-col mt-20">
           <Pills>

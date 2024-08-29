@@ -89,7 +89,7 @@ const PortfolioSection = () => {
     [`${cardsStart}px`, `-${cards.length * cardSize - cardSize * cardEnd}px`]
   );
   return (
-    <section className=" sm:py-32 xsm:py-20 py-10">
+    <section id="work" className=" sm:py-32 xsm:py-20 py-10">
       <div ref={targetRef} className="relative h-[300vh] md:block hidden">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <div className="lg:ml-32 ml-6">

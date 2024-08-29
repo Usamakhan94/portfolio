@@ -6,7 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Testimonials = () => {
   return (
-    <section className=" xsm:py-36 py-10 relative">
+    <section id="testimonials" className=" xsm:py-36 py-10 relative">
       <div className="absolute -top-[100%] left-1/2 -translate-x-1/2 w-full -z-50 pointer-events-none max-w-[120rem] blur-[3.125rem]">
         <img src="/colored_bg.png" className="w-full" alt="" />
       </div>

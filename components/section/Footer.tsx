@@ -11,10 +11,10 @@ import {
 } from "react-icons/fa6";
 
 const navLinks = [
-  { href: "", label: "Home" },
-  { href: "about", label: "About us" },
-  { href: "work", label: "Our work" },
-  { href: "testimonials", label: "Testimonials" },
+  { href: "#hero", label: "Home" },
+  { href: "#about", label: "About us" },
+  { href: "#services", label: "Services" },
+  { href: "#testimonials", label: "Testimonials" },
 ];
 
 const socialLinks = [
@@ -109,9 +109,7 @@ const Footer = () => {
                 />
               </div>
               <p className="text-white text-sm">
-                {`There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, `}
+                {`Empowering Digital Futures with Innovative Web and App Solutions. `}
               </p>
             </div>
             <ul className="flex md:gap-9 xsm:gap-4 gap-2 md:items-center items-start md:flex-row flex-col justify-end xsm:col-start-3">

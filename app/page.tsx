@@ -5,7 +5,7 @@ import Hero from "@/components/section/Home/Hero";
 import Services from "@/components/section/Home/Services";
 import Testimonials from "@/components/section/Home/Testimonials";
 import Vision from "@/components/section/Home/Vision";
-import PortfolioSection from "@/components/section/Home/Work";
+// import PortfolioSection from "@/components/section/Home/Work";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Vision />
       <OurGoal />
       <Services />
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
       <Experience />
       <Testimonials />
       <ContactUs />

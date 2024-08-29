@@ -42,7 +42,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="xsm:pb-32 pb-16">
+    <section id="contact" className="xsm:pb-32 pb-16">
       <div className="container">
         <div className="grid md:grid-cols-2 items-center">
           <div className="md:flex justify-end hidden">

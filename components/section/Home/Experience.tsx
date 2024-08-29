@@ -2,7 +2,7 @@ import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 const Experience = () => {
   return (
-    <section>
+    <section className="sm:pt-60 xsm:pt-32 pt-16">
       <div className="container">
         <div className="grid sm:grid-cols-3 md:max-w-[80%] m-auto gap-4 sm:gap-0">
           <div className="text-center">

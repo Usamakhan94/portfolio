@@ -14,10 +14,10 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
-  { href: "", label: "Home" },
-  { href: "about", label: "About us" },
-  { href: "work", label: "Our work" },
-  { href: "testimonials", label: "Testimonials" },
+  { href: "#hero", label: "Home" },
+  { href: "#about", label: "About us" },
+  { href: "#services", label: "Services" },
+  { href: "#testimonials", label: "Testimonials" },
 ];
 
 const Navbar = () => {
@@ -132,7 +132,7 @@ const Navbar = () => {
               </ul>
               <Link
                 className="rounded-full h-14 min-w-[10.25rem] relative group"
-                href=""
+                href="#contact"
               >
                 {!isView && (
                   <div className="absolute w-1/2 h-1/2 bg-[#01BAED] -bottom-1 left-1/2 -translate-x-1/2 rounded-full blur-md opacity-30" />
@@ -229,7 +229,7 @@ const Navbar = () => {
                 {/* <li> */}
                 <Link
                   className="rounded-full h-14 min-w-[10.25rem] relative group block w-fit contact_btn"
-                  href=""
+                  href="#contact"
                 >
                   <div className="absolute w-1/2 h-1/2 bg-[#01BAED] -bottom-1 left-1/2 -translate-x-1/2 rounded-full blur-md opacity-30" />
 

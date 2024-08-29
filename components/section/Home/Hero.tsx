@@ -2,7 +2,7 @@
 import { ScrollIcon } from "@/components/ui/icons";
 import Transition from "@/components/ui/transition";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 const Hero = () => {
   const [Loading, setLoading] = useState(true);
 
@@ -22,7 +22,10 @@ const Hero = () => {
   // );
 
   return (
-    <section className="xsm:pt-[10rem] pt-[5rem] relative isolate min-h-screen xsm:block flex justify-center items-center">
+    <section
+      id="hero"
+      className="xsm:pt-[10rem] pt-[5rem] relative isolate min-h-screen xsm:block flex justify-center items-center"
+    >
       <div className="absolute 2xl:-top-[62.5rem] xl:-top-[42.5rem] md:-top-[32.5rem] sm:-top-[22.5rem] -top-[1.5rem] left-1/2 -translate-x-1/2 w-full -z-50 pointer-events-none max-w-[120rem] blur-[3.125rem]">
         <img src="/colored_bg.png" className="w-full" alt="" />
       </div>
@@ -68,14 +71,22 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="absolute lg:w-[1200px] md:w-[56.25rem] xsm:w-[500px] w-[300px] lg:h-[700px] md:h-[500px] xsm:h-[400px] h-[200px] pointer-events-none top-[15%] -z-10 -left-[5%]">
-        <Image
-          className="object-contain"
-          src="/main_bnr.webp"
-          alt="Bg Curve"
-          fill
-        />
-      </div>
+      <Suspense
+        fallback={
+          <h1 className="tex-white absolute z-50 font-bold text-[92rem]">
+            Loading
+          </h1>
+        }
+      >
+        <div className="absolute lg:w-[1200px] md:w-[56.25rem] xsm:w-[500px] w-[300px] lg:h-[700px] md:h-[500px] xsm:h-[400px] h-[200px] pointer-events-none top-[15%] -z-10 -left-[5%]">
+          <Image
+            className="object-contain"
+            src="/main_bnr.webp"
+            alt="Bg Curve"
+            fill
+          />
+        </div>
+      </Suspense>
     </section>
   );
 };
