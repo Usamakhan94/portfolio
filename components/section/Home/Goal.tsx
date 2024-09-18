@@ -90,19 +90,19 @@ const OurGoal = () => {
             <div
               className=" absolute -bottom-[18%] lg:-right-[36%] md:-right-[60%] right-[10%] w-[50rem] h-[50rem] rounded-full pointer-events-none"
               style={{
-                backgroundImage: "url(/gradient-circle.png)",
+                backgroundImage: "url(/gradient-circle.webp)",
                 backgroundSize: "100% 100%",
               }}
             />
             <div className="relative isolate md:pb-24 hidden xsm:block">
               <Image
-                src="/our-goal-big.png"
+                src="/our-goal-big.webp"
                 alt=""
                 fill
                 className="!static md:max-w-[560px] max-w-full"
               />
               <Image
-                src="/our-goal-small.png"
+                src="/our-goal-small.webp"
                 alt=""
                 width="350"
                 height="350"
@@ -186,10 +186,10 @@ const OurGoal = () => {
           ))}
         </Swiper>
         <div className="absolute top-0 -z-10">
-          <Image src="/top_bnr-shade1.png" alt="" fill className="!static" />
+          <Image src="/top_bnr-shade1.webp" alt="" fill className="!static" />
         </div>
         <div className="absolute top-0 right-0 -z-10">
-          <Image src="/top_bnr-shade2.png" alt="" fill className="!static" />
+          <Image src="/top_bnr-shade2.webp" alt="" fill className="!static" />
         </div>
       </div>
     </section>

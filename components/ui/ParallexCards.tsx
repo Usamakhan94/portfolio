@@ -52,7 +52,7 @@ const Card = ({
               <motion.img
                 style={{ scale: imageScale }}
                 className=" w-full h-full object-fill"
-                src="https://loremflickr.com/200/200?dog=1"
+                src={src}
                 alt="image"
               />
             </div>

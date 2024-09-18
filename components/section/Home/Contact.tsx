@@ -47,7 +47,7 @@ const ContactUs = () => {
         <div className="grid md:grid-cols-2 items-center">
           <div className="md:flex justify-end hidden">
             <Image
-              src="/contact-img.png"
+              src="/contact-img.webp"
               className="max-h-[39.5rem]"
               width="555"
               height="100"

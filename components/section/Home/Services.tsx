@@ -10,7 +10,7 @@ const Services = () => {
       title: "UI/UX DESIGN",
       description:
         "The fact that we understand the fundamentals of UI and UX is what sets us apart in the design world . As a well-designed UI with consistent colors and clean typography can make a complex application feel simple and approachable, while thoughtful UX design ensures that the user can achieve their goals with minimal friction. Together, they create a product that looks good and works even better, leading to higher user satisfaction and engagement.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Ui-Ux-Design.webp",
       link: "#",
       // color: "#BBACAF",
     },
@@ -18,7 +18,7 @@ const Services = () => {
       title: "WEB AND APP Development",
       description:
         "To realize your digital vision, we offer premium web and app development services. Our team of skilled developers is capable of building a dynamic website or an innovative mobile application; they have the knowledge and experience to provide solutions that are reliable, scalable, and easy to use. We approach development holistically, making sure that your project's front end and back end are optimized for usability, security, and performance.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Web-and-app-development.webp",
       link: "#",
       // color: "#977F6D",
     },
@@ -26,7 +26,7 @@ const Services = () => {
       title: "Brand and product creation",
       description:
         "We specialize in crafting compelling brands that resonate with your target audience. Our comprehensive service transforms ideas into market-ready entities, handling everything from brand identity to product development. With a focus on market trends and consumer behavior, we deliver solutions that make your brand stand out, driving lasting customer engagement and loyalty.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Brand-and-Product-Creation.webp",
       link: "#",
       // color: "#C2491D",
     },
@@ -34,7 +34,7 @@ const Services = () => {
       title: "LOGO DESIGN",
       description:
         "Looking for the perfect logo? Aviorsol specializes in creating memorable, impactful logo designs that form the cornerstone of your brand identity. Our service captures your business's essence, conveying your values and mission through a unique, visually striking symbol. We ensure your logo leaves a lasting impression, making it a true reflection of your brand.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Logo-Design.webp",
       link: "#",
       // color: "#C2491D",
     },
@@ -42,7 +42,7 @@ const Services = () => {
       title: "Content Management System (CMS)",
       description:
         "We offer advanced CMS and headless web development services to elevate your digital presence. Our user-friendly CMS ensures seamless content management, while our headless approach provides unmatched flexibility. By decoupling the front-end and back-end, we deliver customized, high-performance websites that adapt to your needs, enhancing user experiences across all devices and building a future-proof online presence for your business.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Content-Management-System.webp",
       link: "#",
       // color: "#C2491D",
     },
@@ -50,7 +50,7 @@ const Services = () => {
       title: "e-commerce",
       description:
         "We provide comprehensive eCommerce solutions that empower businesses to thrive online. Whether launching or enhancing your store, we deliver secure, scalable platforms tailored to your brand. Our expert team guides you through every step, ensuring a fully functional, high-performance online store that meets your business's unique needs and drives success in the digital marketplace.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Ecommerce.webp",
       link: "#",
       // color: "#C2491D",
     },
@@ -58,7 +58,7 @@ const Services = () => {
       title: "QA/QC",
       description:
         "We provide comprehensive QA and QC services to ensure your web projects meet the highest Google Lighthouse standards. Our services identify and address issues throughout development, guaranteeing flawless functionality and a seamless user experience. Additionally, we offer support for maintaining your website and resolving any bugs you encounter.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/QC.webp",
       link: "#",
       // color: "#C2491D",
     },
@@ -66,7 +66,7 @@ const Services = () => {
       title: "Consultation",
       description:
         "At Aviorsol, we're dedicated to giving our clients accurate, top-notch technical consulting services. Our strategy is based on a thorough comprehension of the particular needs of every customer, guaranteeing that we provide solutions that not only fulfil but also beyond expectations.",
-      src: "https://source.unsplash.com/featured/300x202",
+      src: "/Consultation.webp",
       link: "#",
       // color: "#C2491D",
     },

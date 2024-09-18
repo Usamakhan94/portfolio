@@ -27,7 +27,7 @@ const Hero = () => {
       className="xsm:pt-[10rem] pt-[5rem] relative isolate min-h-screen xsm:block flex justify-center items-center"
     >
       <div className="absolute 2xl:-top-[62.5rem] xl:-top-[42.5rem] md:-top-[32.5rem] sm:-top-[22.5rem] -top-[1.5rem] left-1/2 -translate-x-1/2 w-full -z-50 pointer-events-none max-w-[120rem] blur-[3.125rem]">
-        <img src="/colored_bg.png" className="w-full" alt="" />
+        <img src="/colored_bg.webp" className="w-full" alt="" />
       </div>
       <div className="container relative">
         {Loading && (
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
         <div
           className=" md:w-[180px] md:h-[180px] sm:w-[160px] xsm:w-[120px] w-[80px] sm:h-[160px] xsm:h-[120px] h-[80px] !bg-no-repeat !bg-cover absolute xl:top-[5%] lg:top-[26%] sm:top-[14%] top-[-14%] xl:right-[20%] lg:right-[10%] right-[10%] overflow-hidden"
-          style={{ background: "url(/inner-logo.png)" }}
+          style={{ background: "url(/inner-logo.webp)" }}
         >
           <Image
             src="/outer-logo.png"
