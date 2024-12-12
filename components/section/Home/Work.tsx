@@ -1,51 +1,31 @@
 "use client";
 import { ArrowCircleIcons } from "@/components/ui/icons";
 import Pills from "@/components/ui/pill";
-import Transition from "@/components/ui/transition";
+// import Transition from "@/components/ui/transition";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const cards = [
   {
-    url: "/imgs/abstract/1.jpg",
+    url: "/portfolio/abstract-1.jpeg",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
+    url: "/portfolio/abstract-2.jpeg",
     title: "Title 2",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
+    url: "/portfolio/abstract-3.jpeg",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
+    url: "/portfolio/abstract-4.jpeg",
     title: "Title 4",
     id: 4,
-  },
-  {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
-    id: 5,
-  },
-  {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
-    id: 6,
-  },
-  {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
-    id: 7,
-  },
-  {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 8",
-    id: 8,
   },
 ];
 
@@ -99,13 +79,13 @@ const PortfolioSection = () => {
             <h4 className="text-h2 font-bold leading-none">Our Portfolio</h4>
             <Link
               className="rounded-full block mt-7 mb-1 self-center xsm:h-[72px] h-[58px] xsm:min-w-[16.75rem] min-w-[17.5rem] w-fit relative group"
-              href="#"
+              href="#contact"
             >
               <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
                 <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />
                 <div className="bg-[#05080B] rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
                   <span className=" xsm:text-h6 text-body font-medium">
-                    View More
+                    For More
                   </span>
                   <span className="group-hover:rotate-45 transition-all">
                     <ArrowCircleIcons />
@@ -119,7 +99,7 @@ const PortfolioSection = () => {
               return (
                 <a
                   key={card.id}
-                  className={`relative h-screen overflow-hidden bg-card-background`}
+                  className={`relative h-[80vh] overflow-hidden bg-card-background rounded-md mt-10`}
                   style={{ width: `${cardSize}px` }}
                 >
                   <div
@@ -130,11 +110,11 @@ const PortfolioSection = () => {
                     }}
                     className="absolute inset-0 z-0 pointer-events-none"
                   ></div>
-                  <div className="absolute inset-0 z-10 grid place-content-center">
+                  {/* <div className="absolute inset-0 z-10 grid place-content-center">
                     <p className="bg-gradient-to-br from-white/20 to-white/0 p-4 text-h6 font-black uppercase text-white backdrop-blur-lg">
                       {card.title}
                     </p>
-                  </div>
+                  </div> */}
                 </a>
               );
             })}
@@ -158,11 +138,11 @@ const PortfolioSection = () => {
                 key={index}
                 className=" xsm:first:row-span-2 xsm:first:h-[21.875rem] xsm:[&:nth-last-child(4n)]:row-span-2 xsm:[&:nth-last-child(4n)]:h-[21.875rem] min-h-[160px]"
               >
-                <Transition className="h-full">
+                {/* <Transition className="h-full">
                   <div className=" h-full bg-card rounded-[10px] grid place-items-center overflow-hidden">
-                    <h4 className="text-h4 text-secondary">{item.title}</h4>
+                    <h4 className="text-h4 text-secondary">{item?.title}</h4>
                   </div>
-                </Transition>
+                </Transition> */}
               </Link>
             );
           })}
